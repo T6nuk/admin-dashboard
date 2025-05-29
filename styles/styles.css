@@ -13,23 +13,89 @@ body {
 #nav {
   background-color: red;
 }
-
 .buttons {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
 #main {
   background-color: blue;
   display: grid;
-  grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 5fr;
 }
-
 .main-header {
   background-color: white;
-  grid-column: 1/3;
-  grid-row: 1;
+  display: grid;
+  grid-column: 1/2;
 }
+.header-content {
+  display: grid;
+  grid-template-columns: 2.5fr 1.5fr;
+}
+.left-side {
+  background-color: chocolate;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.icon {
+  width: 18px;
+}
+.searchbar {
+  display: flex;
+}
+.searchbar > input {
+  height: 20px;
+  width: clamp(10%, 20rem, 100%);
+  background-color: rgb(207, 214, 214);
+  border: 0;
+  border-radius: 8px;
+}
+.profile-image > img {
+  height: 40px;
+  width: 40px;
+  border-radius: 30px;
+}
+
+.header-bottom {
+  display: flex;
+}
+
+.right-side {
+  background-color: darkgray;
+}
+
 .main-content {
   background-color: aqua;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.your-projects {
+  background-color: blueviolet;
+  grid-row: 1/3;
+  display: flex;
+  flex-direction: column;
+}
+.project-cards {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.announcements {
+  background-color: brown;
+  display: flex;
+  flex-direction: column;
+}
+.announcements-display {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.trending {
+  background-color: chartreuse;
 }
